@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.venv/
+sample_data/*.png
+!sample_data/traffic_frame.png
