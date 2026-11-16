@@ -2,6 +2,9 @@
 
 > **Proyek Capstone 2**: Sistem Deteksi dan Penghitung Kendaraan Cerdas Berbasis Hybrid Fractal Complexity dan YOLO  
 > **Program Studi**: S1 Ilmu Komputer / Informatika, FMIPA, Universitas Gadjah Mada  
+> **Anggota Tim Pengembang**:  
+> - Aji Kusuma Putra (NIM: 22/503701/PA/21657)  
+> - Rayhan Haldi Hermawan (NIM: 24/545406/PA/23176)  
 
 ---
 
