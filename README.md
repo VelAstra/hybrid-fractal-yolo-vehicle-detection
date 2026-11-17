@@ -11,11 +11,9 @@
 ## Ringkasan Proyek
 Menggabungkan ekstraksi fitur kompleksitas fraktal (*Box-Counting Fractal Dimension* $D_F$ dan *Lacunarity* $\Lambda$) dengan usulan deteksi objek spasial untuk mendeteksi, melacak, dan menghitung kendaraan dari rekaman CCTV lalu lintas serta menyaring *false positive* akibat latar belakang alami (dedaunan dan bayangan jalan).
 
-### Pembagian Tugas Tim 4 Mahasiswa
-1. **Mahasiswa 1**: Preprocessing Video & Ekstraksi Frame CCTV.
-2. **Mahasiswa 2**: Ekstraksi Fitur Dimensi Fraktal ($D_F$) dan Lakunaritas.
-3. **Mahasiswa 3**: Mesin Detektor Hybrid & Algoritma Pelacak Kendaraan (*Traffic Tracker*).
-4. **Mahasiswa 4**: Antarmuka Grafis (Tkinter GUI), Integrasi Sistem, & Evaluasi Metrik (mAP, Precision, Recall).
+### Pembagian Tugas Tim (2 Mahasiswa)
+1. **Aji Kusuma Putra** (`22/503701/PA/21657`): Video preprocessing, ekstraksi frame CCTV berkala, stabilisasi latar belakang, serta ekstraksi fitur dimensi fraktal box-counting dan lakunaritas tekstur ROI kendaraan. (Modul: `sample_data/generate_traffic.py`, `core/fractal_features.py`).
+2. **Rayhan Haldi Hermawan** (`24/545406/PA/23176`): Mesin detektor hybrid, pelacakan multi-objek centroid tracking, garis batas virtual (virtual counting line), GUI Dashboard Tkinter, integrasi CLI, dan evaluasi metrik (mAP, Precision, Recall). (Modul: `core/detector.py`, `core/tracker.py`, `core/evaluation.py`, `gui/app.py`, `cli.py`).
 
 ---
 

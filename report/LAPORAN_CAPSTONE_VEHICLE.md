@@ -32,11 +32,9 @@ Manajemen lalu lintas cerdas (*Intelligent Transportation Systems* - ITS) membut
 2. Bagaimana merancang pipeline pelacakan (*tracking*) berbasis asosiasi spasial centroid dan IoU untuk menghitung kendaraan dua arah?
 3. Bagaimana mengemas sistem ke dalam prototipe aplikasi pemantau lalu lintas terintegrasi yang dapat mengevaluasi performa secara kuantitatif?
 
-### 1.3 Pembagian Tugas Tim (4 Mahasiswa)
-1. **Mahasiswa 1**: *Video Preprocessing* & Ekstraksi Frame CCTV.
-2. **Mahasiswa 2**: Ekstraksi Fitur Dimensi Fraktal ($D_F$) dan Lakunaritas ($\Lambda$).
-3. **Mahasiswa 3**: Integrasi Mesin Detektor Hybrid & Algoritma Pelacak (*Traffic Tracker*).
-4. **Mahasiswa 4**: Antarmuka Grafis (GUI Dashboard), Integrasi Sistem, & Evaluasi Metrik (mAP, Precision, Recall).
+### 1.3 Pembagian Tugas Tim Capstone (2 Mahasiswa)
+1. **Aji Kusuma Putra** (NIM: 22/503701/PA/21657): Video preprocessing, ekstraksi frame CCTV berkala, stabilisasi latar belakang, serta ekstraksi fitur dimensi fraktal box-counting dan lakunaritas tekstur ROI kendaraan. (`sample_data/generate_traffic.py`, `core/fractal_features.py`).
+2. **Rayhan Haldi Hermawan** (NIM: 24/545406/PA/23176): Mesin detektor hybrid, pelacakan multi-objek centroid tracking, garis batas virtual (virtual counting line), GUI Dashboard Tkinter, integrasi CLI, dan evaluasi metrik (mAP, Precision, Recall). (`core/detector.py`, `core/tracker.py`, `core/evaluation.py`, `gui/app.py`, `cli.py`).
 
 ---
 

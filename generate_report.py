@@ -196,8 +196,8 @@ def build_pdf_report():
         styles["AcademicBody"]
     ))
 
-    story.append(Paragraph("3.2 Pembagian Tugas Tim Capstone (4 Mahasiswa)", styles["SectionHeading"]))
-    story.append(Paragraph("Tabel 3.1: Matriks Pembagian Tugas Rekayasa Tim Capstone (4 Mahasiswa)", styles["TableCaption"]))
+    story.append(Paragraph("3.2 Pembagian Tugas Tim Capstone (2 Mahasiswa)", styles["SectionHeading"]))
+    story.append(Paragraph("Tabel 3.1: Matriks Pembagian Tugas Rekayasa Tim Capstone (2 Mahasiswa)", styles["TableCaption"]))
 
     t3_data = [
         [
@@ -208,30 +208,18 @@ def build_pdf_report():
         ],
         [
             Paragraph("1", styles["TableCellCenter"]),
-            Paragraph("Mahasiswa 1", styles["TableCellLeft"]),
-            Paragraph("Video preprocessing, ekstraksi frame CCTV, background stabilization.", styles["TableCellLeft"]),
-            Paragraph("sample_data/generate_traffic.py", styles["TableCellCode"]),
+            Paragraph("Aji Kusuma Putra<br/><font size=7.5 color='#4A5568'>NIM: 22/503701/PA/21657</font>", styles["TableCellLeft"]),
+            Paragraph("Video preprocessing, ekstraksi frame CCTV berkala, stabilisasi latar belakang, serta ekstraksi fitur dimensi fraktal box-counting dan lakunaritas tekstur ROI kendaraan.", styles["TableCellLeft"]),
+            Paragraph("sample_data/generate_traffic.py<br/>core/fractal_features.py", styles["TableCellCode"]),
         ],
         [
             Paragraph("2", styles["TableCellCenter"]),
-            Paragraph("Mahasiswa 2", styles["TableCellLeft"]),
-            Paragraph("Ekstraksi dimensi fraktal box-counting dan lakunaritas tekstur ROI.", styles["TableCellLeft"]),
-            Paragraph("core/fractal_features.py", styles["TableCellCode"]),
-        ],
-        [
-            Paragraph("3", styles["TableCellCenter"]),
-            Paragraph("Mahasiswa 3", styles["TableCellLeft"]),
-            Paragraph("Mesin deteksi hybrid dan pelacakan centroid multi-kendaraan.", styles["TableCellLeft"]),
-            Paragraph("core/detector.py<br/>core/tracker.py", styles["TableCellCode"]),
-        ],
-        [
-            Paragraph("4", styles["TableCellCenter"]),
-            Paragraph("Mahasiswa 4", styles["TableCellLeft"]),
-            Paragraph("GUI Dashboard Tkinter, integrasi CLI, evaluasi mAP, Precision, Recall.", styles["TableCellLeft"]),
-            Paragraph("core/evaluation.py<br/>gui/app.py, cli.py", styles["TableCellCode"]),
+            Paragraph("Rayhan Haldi Hermawan<br/><font size=7.5 color='#4A5568'>NIM: 24/545406/PA/23176</font>", styles["TableCellLeft"]),
+            Paragraph("Mesin detektor hybrid, pelacakan multi-objek centroid tracking, garis batas virtual (virtual counting line), GUI Dashboard Tkinter, integrasi CLI, dan evaluasi metrik (mAP, Precision, Recall).", styles["TableCellLeft"]),
+            Paragraph("core/detector.py<br/>core/tracker.py<br/>core/evaluation.py<br/>gui/app.py, cli.py", styles["TableCellCode"]),
         ],
     ]
-    t3_table = Table(t3_data, colWidths=[24, 76, 196, 100])
+    t3_table = Table(t3_data, colWidths=[24, 106, 166, 100])
     t3_table.setStyle(get_booktabs_style(len(t3_data)))
     story.append(t3_table)
     story.append(Spacer(1, 0.4 * cm))

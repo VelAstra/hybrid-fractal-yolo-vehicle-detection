@@ -1,6 +1,6 @@
 """
 Interactive Traffic Vehicle Detection Dashboard.
-Role: Mahasiswa 4 (Antarmuka Pengguna dan Evaluasi).
+Role: Rayhan Haldi Hermawan (GUI, Evaluation, & Integration).
 """
 
 import os
